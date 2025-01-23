@@ -277,8 +277,13 @@ progress {
 }
 
 .cart4 {
-    width: 60%;
-    margin-left: 15%;
+    padding: 2rem 1rem;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.cart5 {
+    width: 80%;
 }
 
 .cart:hover {
@@ -289,11 +294,12 @@ progress {
     height: max-content;
     width: 100%;
     border: 1px solid black;
-    background-color:rgb(27, 26, 26);
+    background-color: rgb(27, 26, 26);
+    padding-bottom: 25px;
 }
 
 .container {
-    width: 70%;
+    width: 60%;
     margin-left: 18%;
     border: 1px solid black;
     display: flex;
@@ -313,12 +319,13 @@ progress {
 }
 
 .i-cart {
-    width: 80%;
+    width: 60%;
     border: 1px solid black;
-    margin: 5%;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
     background-color: rgb(76, 73, 73);
+    margin-left: 15%;
 }
 
 .i-cart h3 {
@@ -346,42 +353,126 @@ ul {
     margin: 1rem;
     border-radius: 20px;
 }
-i{
+
+i {
     margin-right: 10px;
 }
+
 .i-cart3 li {
     margin-top: 1rem;
     font-size: 1.3rem;
 }
-.i-cart li{
+
+.i-cart li {
     color: rgba(224, 216, 216, 0.711);
 }
-.head h2{
+
+.head h2 {
     color: rgb(255, 255, 255);
 }
-.head h3{
+
+.head h3 {
     color: grey;
 }
+
+#skills {
+    width: 100%;
+    height: max-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgb(27, 26, 26);
+    padding-bottom: 25px;
+}
+
+.s-cart {
+    width: 40%;
+    height: max-content;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(53, 52, 52);
+    transition: background 0.8s ease-in;
+}
+.s-cart:hover{
+    background: linear-gradient(to top right, rgb(74, 71, 71), rgb(123, 118, 118));
+    color: black;
+}
+.s-cart h2 {
+    margin: 1%;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.s-cart ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.s-cart li {
+    border: 1px solid black;
+    width: max-content;
+    margin: 1%;
+    padding: 1rem;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 1rem;
+    transition: background 0.5s ease-in-out;
+    align-items: center;
+}
+.s-cart li:hover {
+    background: linear-gradient(to top right, #e9b4d2, #bb74bb);
+}
+h3,h4,h1,h2{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media screen and (max-width: 768px) {
+    .s-cart {
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+    .s-cart h2 {
+        margin: 1%;
+        font-size: 1rem;
+    }
+
     .i-cart2 li {
         margin: 5px;
     }
-.i-cart3 li {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-}
+
+    .i-cart3 li {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+
     .i-cart h3 {
         margin: 0.5rem;
         font-size: 1rem;
     }
 
-    .i-cart1 li {
+    .i-cart li {
+        font-size: 15px;
+    }
+
+    .i-cart2 li {
         font-size: 10px;
     }
 
     .container {
         width: 90%;
-        margin:1rem;
+        margin: 1rem;
+    }
+
+    .i-cart {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2%;
     }
 
     .head h2 {
@@ -513,5 +604,13 @@ i{
 
     .cart {
         width: 100%;
+    }
+
+    .cart h3 {
+        font-size: 1rem;
+    }
+
+    .cart4 {
+        margin: 5%;
     }
 }
