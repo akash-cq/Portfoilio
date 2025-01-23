@@ -397,10 +397,12 @@ i {
     background: rgb(53, 52, 52);
     transition: background 0.8s ease-in;
 }
-.s-cart:hover{
+
+.s-cart:hover {
     background: linear-gradient(to top right, rgb(74, 71, 71), rgb(123, 118, 118));
     color: black;
 }
+
 .s-cart h2 {
     margin: 1%;
     font-size: 2rem;
@@ -424,14 +426,117 @@ i {
     transition: background 0.5s ease-in-out;
     align-items: center;
 }
+
+#projects {
+    width: 100%;
+    height: 50rem;
+}
+
+.nextBtn,
+.prevBtn {
+    color: black;
+    background-color: black;
+}
+
+.p-cart {
+    margin-top: 1rem;
+    margin-left: 30%;
+    width: 40%;
+    height: 30rem;
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
+.p-cart ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.p-cart li {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.upper {
+    width: 100;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.nameP {
+    color: white;
+    margin: 1%;
+}
+
+.p-cart li {
+    margin: 5%;
+
+    border: none;
+}
+
+.p1 li {
+    background-color: rgba(0, 128, 0, 0.536);
+    color: whitesmoke;
+}
+
+.p2 li {
+    background-color: rgb(108, 51, 161);
+    color: whitesmoke;
+}
+
+.p3 li {
+    background-color: #b47992;
+    color: whitesmoke;
+}
+
+.p-cart i {
+    margin-left: 5%;
+}
+
+.p-cart h4 {
+    display: inline;
+}
+
+.paraP {
+    color: whitesmoke;
+    margin: 1%;
+}
+
+.u1 {
+    background-color: green;
+}
+
+.u2 {
+    background-color: blueviolet;
+}
+
+.u3 {
+    background-color: #b47992;
+}
+
 .s-cart li:hover {
     background: linear-gradient(to top right, #e9b4d2, #bb74bb);
 }
-h3,h4,h1,h2{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+h3,
+h4,
+h1,
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
+    .p-cart {
+        margin :1%;
+        margin-top: 1rem;
+            width: 100%;
+            height: 30rem;
+            background-color: rgb(61, 61, 61);
+            border-radius: 10px;
+        }
     .s-cart {
         width: 80%;
         margin-left: 1rem;
