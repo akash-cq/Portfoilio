@@ -6,24 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akash Gupta | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <nav>
     <h3 class="left">Akash Gupta</h3>
+    <div class="div">
     <ul class="right">
       <li><a href="">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#intership">Internship</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <i class="fa-solid fa-bars bars fa-2xl" id="bars" style="color: #63E6BE;"></i>
+    </div>
   </nav>
   <header>
     <section class="hero">
@@ -36,12 +39,24 @@
           student activities at a spiritual organization, where I am
           developing my leadership and organizational skills.
         </p>
+
         <button class="contactB">Contact Me</button>
+        <div class="social-media up">
+        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="https://x.com/ag244834" ><i class="fa-brands fa-twitter fa-xl" ></i></a>
+        <a href="www.linkedin.com/in/akash-gupta-06b0a6280"><i class="fa-brands fa-xl fa-linkedin"></i></a>
+                  <a href="https://github.com/akash-cq">
+             <i class="fa-brands fa-square-github fa-2xl"></i></a>
+        <a href="https://leetcode.com/u/akash_Cq/"><img src="icons8-level-up-your-coding-skills-and-quickly-land-a-job-96.png" style="height: 35px; width: 35px;" alt=""></a>
       </div>
+    </div>
+      </div>
+      
       <div class="right-sideH">
         <div class="img">
           <img src="https://tse4.mm.bing.net/th?id=OIP.6f5ZEeT1bM05vEOyFk2a7AHaHa&pid=Api&P=0&h=180" />
         </div>
+        
       </div>
     </section>
   </header>
@@ -59,7 +74,18 @@
           <p>Completed a valuable 45-day internship during my first year of BCA, gaining hands-on experience in
             real-world projects, professional work environment and learn new Technologies.</p>
         </div>
-        <div class="role abc">
+<div class="role abc">
+  <h2><i class="fa-solid fa-lightbulb"></i> Problem Solving</h2>
+  <p>I actively solve problems on LeetCode, focusing on various topics like Arrays, Strings, Greedy Algorithms, Hashing, Stacks, Linked Lists, and Trees. Below are the details:</p>
+  <ul>
+    <li><strong>Total Solved Problems:</strong> 170+</li>
+    <li><strong>Easy:</strong> 116+</li>
+    <li><strong>Medium:</strong> 54+</li>
+    <li><strong>Hard:</strong> 6+</li>
+  </ul>
+</div>
+
+          <div class="role abc">
           <h2><i class="fa-solid fa-people-group"></i>Leadership Role</h2>
           <p>Coordinating and managing student activities, developing leadership and organizational skills, and making a
             positive impact on the community.</p>
@@ -78,9 +104,15 @@
             <li><i class="fa-solid fa-check"
                 style="color: whitesmoke;background-color: blueviolet;border-radius: 50%;margin-right: 10px;padding: 3px;"></i></i>internship
               Experience</li>
+               <li><i class="fa-solid fa-check"
+                style="color: whitesmoke;background-color: blueviolet;border-radius: 50%;margin-right: 10px;padding: 3px;"></i></i>Problem-
+              Solver </li>
             <li><i class="fa-solid fa-check"
                 style="color: whitesmoke;background-color: blueviolet;border-radius: 50%;margin-right: 10px;padding: 3px;"></i></i>Student
               coordinator </li>
+              <li><i class="fa-solid fa-check"
+                style="color: whitesmoke;background-color: blueviolet;border-radius: 50%;margin-right: 10px;padding: 3px;"></i></i>Event
+              Management </li>
           </ul>
           <p class="pro">Learning Progress</p>
           <progress type="progress" value="80" max="100" disabled></progress>
@@ -300,8 +332,88 @@
       </button>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="contact">
+  <h2 class="about-h" style="margin-left: 0;">Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-form">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <h3>Akash Gupta</h3>
+      <p>BCA Student | Passionate About Technology & Leadership</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/ag244834"><i class="fa-brands fa-twitter"></i></a>
+        <a href="www.linkedin.com/in/akash-gupta-06b0a6280"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <p class="footer-credits">&copy; 2025 Akash Gupta. All rights reserved.</p>
+  </div>
+</footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const bar = document.querySelector(".bars");
+    const nav = document.querySelector(".right");
+    let togle = true;
+    let obj=[
+      {
+        name:"URL Sortner Service",
+        des:"Developed a robust URL shortening service designed to create short aliases for long URLs, making them easier to share and track. The service allows users to generate shortened URLs that redirect to the original link when visited.",
+        tech:["HTML","CSS","Javascript","Node.js","Express","MongoDb"],
+        github:"https://github.com/akash-cq/urlsortner",
+      },
+      {
+        name:"Group Discussion Portal",
+        des:"Developed a dynamic group discussion portal that enables users to post questions and engage in discussions by commenting on various topics. This platform is designed to facilitate knowledge sharing and community building.",
+        tech:["HTML","CSS","Javascript"],
+        github:"https://github.com/akash-cq/groupDiscussionStatic",
+        live:"https://akash-cq.github.io/groupDiscussionStatic/",
+      },
+      {
+        name:"To-Do-App",
+        des:"Created a streamlined to-do list application that helps users manage their tasks efficiently. The app allows users to add, edit, and delete tasks, ensuring they stay organized and productive.",
+        tech:["HTML","CSS","Javascript","Node.js","Express","MongoDb"],
+        github:"https://github.com/akash-cq/To-do",
+      }
+    ]
+    bar.addEventListener("click",()=>{
+      if(togle){
+      nav.style.display = "flex";
+      togle=false
+    }else{
+      nav.style.display = "none";
+      togle=true
+    }
+    })
+    
+  </script>
 </body>
 
 </html>
