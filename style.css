@@ -82,11 +82,34 @@ ul li a:hover {
     margin-top: 2rem;
 }
 
+
 .name-ii {
     font-size: 4rem;
     color: rgb(132, 56, 204);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(132, 56, 204, 0.8);
+    animation: typing 3.5s steps(20) 1s 1 normal both, blink 0.75s step-end infinite;
 }
 
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 .info {
     margin: 1%;
     font-size: 1.2rem;
@@ -126,14 +149,30 @@ ul li a:hover {
     margin-left: 30%;
     align-items: center;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.6);
+    /* BlueViolet Glow */
+    transition: all 0.3s ease-in-out;
+    border: 5px solid rgba(138, 43, 226, 0.7);
+    /* BlueViolet border */
 }
 
+/* Hover Effect */
+.img:hover {
+    box-shadow: 0 4px 25px rgba(138, 43, 226, 0.9);
+    /* Stronger BlueViolet Glow on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* Image Styling */
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
+    border-radius: 50%;
+    /* To keep image round */
+}   
 #about {
     width: 100%;
 }
@@ -269,7 +308,7 @@ progress {
 
 .cart h3 {
     font-size: 2rem;
-    color: whitesmoke;
+    color: #52cba3;
     padding: 5px;
 }
 
@@ -277,7 +316,10 @@ progress {
     padding: 5px;
     color: rgb(177, 170, 170);
 }
-
+.cart>.nameh {
+    padding: 5px;
+    color: rgb(125, 66, 181);
+}
 .cart p {
     color: whitesmoke;
     padding: 5px;
@@ -333,6 +375,7 @@ progress {
     border-radius: 10px;
     background-color: rgb(76, 73, 73);
     margin-left: 15%;
+    margin-bottom: 1rem;
 }
 
 .i-cart h3 {
@@ -432,7 +475,7 @@ i {
     font-size: 1rem;
     transition: background 0.5s ease-in-out;
     align-items: center;
-    color: white;
+   color: #52cba3;
 }
 
 #projects {
@@ -482,7 +525,6 @@ i {
 
 .p-cart li {
     margin: 5%;
-
     border: none;
 }
 
@@ -527,7 +569,8 @@ i {
 }
 
 .s-cart li:hover {
-    background: linear-gradient(to top right, #e9b4d2, #bb74bb);
+    background: #52cba3;
+    color: whitesmoke;
 }
 
 h3,
@@ -651,6 +694,15 @@ footer {
     height: 0px;
 }
 @media screen and (max-width: 768px) {
+    @keyframes typing {
+            from {
+                width: 0;
+            }
+    
+            to {
+                width: 85%;
+            }
+        }
     .up i{
         margin-bottom: 1rem;
     }
@@ -770,7 +822,6 @@ footer {
         height: auto;
         width: auto;
         border-radius: 50%;
-        border: 1px solid yellow;
         margin: 10%;
         margin-left: 0;
         object-fit: cover;
